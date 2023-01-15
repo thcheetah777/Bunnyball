@@ -56,6 +56,7 @@ public class Ball : MonoBehaviour
 
         if (delay) yield return new WaitForSeconds(restartDelay);
 
+        ObstacleManager.Instance.GenerateObstacles();
         ballBody.velocity = Vector2.zero;
         if (!ColorManager.Instance.dynamic) ColorManager.Instance.ResetColor();
         transform.position = startingPosition;
