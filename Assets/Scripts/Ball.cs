@@ -14,10 +14,12 @@ public class Ball : MonoBehaviour
     Rigidbody2D ballBody;
     Animator ballAnimator;
     Vector2 startingPosition;
+    Shake screenShake;
 
     void Start() {
         ballBody = GetComponent<Rigidbody2D>();
         ballAnimator = GetComponent<Animator>();
+        screenShake = Camera.main.GetComponent<Shake>();
 
         startingPosition = transform.position;
 
