@@ -30,7 +30,7 @@ public class Bumper : MonoBehaviour
             Rigidbody2D ballBody = collision.gameObject.GetComponent<Rigidbody2D>();
             ballBody.AddForce(-collision.relativeVelocity.normalized * bounce, ForceMode2D.Impulse);
 
-            ScoreManager.Instance.ChangeScore(points);
+            ScoreManager.Instance.ChangeScore(points, collision.GetContact(0).point);
         }
     }
 

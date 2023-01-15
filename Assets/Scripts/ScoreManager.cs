@@ -7,7 +7,10 @@ public class ScoreManager : MonoBehaviour
 {
 
     public float score = 0;
+    public float indicatorDestroyDelay = 1;
     public TMP_Text scoreText;
+    public TMP_Text scoreIndicator;
+    public Transform canvasTransform;
 
     Shake scoreShake;
 
@@ -29,10 +32,19 @@ public class ScoreManager : MonoBehaviour
         scoreText.color = ColorManager.Instance.color;
     }
 
-    public void ChangeScore(int scoreIncrement) {
+    public void ChangeScore(int scoreIncrement, Vector2 hitPos) {
         scoreShake.ShakeIt((float)scoreIncrement / 20, (float)scoreIncrement * 1.5f);
         score += scoreIncrement;
         scoreText.text = score.ToString();
+
+        if (hitPos != null)
+        {
+            GameObject indicator = Instantiate(scoreIndicator.gameObject, hitPos, Quaternion.identity, canvasTransform);
+            Destroy(indicator, indicatorDestroyDelay);
+            TMP_Text indicatorText = indicator.GetComponent<TMP_Text>();
+            indicatorText.color = ColorManager.Instance.color;
+            indicatorText.text = "+" + scoreIncrement;
+        }
     }
 
 }

@@ -5,10 +5,19 @@ using UnityEngine;
 public class Flipper : MonoBehaviour
 {
 
+    public SpriteRenderer[] flipperRenderer;
+
     HingeJoint2D hinge;
 
     void Start() {
         hinge = GetComponent<HingeJoint2D>();
+    }
+
+    void Update() {
+        foreach (SpriteRenderer renderer in flipperRenderer)
+        {
+            renderer.color = ColorManager.Instance.color;
+        }
     }
 
     public void Flip() {
