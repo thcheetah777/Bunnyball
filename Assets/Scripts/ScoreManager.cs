@@ -33,7 +33,7 @@ public class ScoreManager : MonoBehaviour
     }
 
     public void ChangeScore(int scoreIncrement, Vector2 hitPos) {
-        scoreShake.ShakeIt((float)scoreIncrement / 20, (float)scoreIncrement * 1.5f);
+        scoreShake.ShakeIt((float)scoreIncrement / 200, (float)scoreIncrement * 0.15f);
         score += scoreIncrement;
         scoreText.text = score.ToString();
 

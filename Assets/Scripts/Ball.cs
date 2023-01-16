@@ -47,7 +47,7 @@ public class Ball : MonoBehaviour
     void OnTriggerEnter2D(Collider2D trigger) {
         if (trigger.CompareTag("Die"))
         {
-            StartCoroutine(Reset());
+            Die();
         }
     }
 
@@ -70,7 +70,8 @@ public class Ball : MonoBehaviour
     }
 
     private void Die() {
-        SceneLoader.Instance.LoadScene("Game");
+        LifeManager.Instance.LoseLife();
+        StartCoroutine(Reset(true));
     }
 
     private void SpawnParticles(ParticleSystem particle) {
