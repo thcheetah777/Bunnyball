@@ -25,18 +25,26 @@ public class LifeManager : MonoBehaviour
     void Update() {
         foreach (Image lifeCounter in liveCounters)
         {
-            lifeCounter.color = ColorManager.Instance.color;
+            if (lifeCounter.color != Color.clear)
+            {
+                lifeCounter.color = ColorManager.Instance.color;
+            }
         }
     }
 
     public void LoseLife() {
         lives--;
-        Destroy(liveCounters[liveCounters.Length - 1]);
-        liveCounters = liveCounters.SkipLast(1).ToArray();
+        liveCounters[lives].color = Color.clear;
         if (lives <= 0)
         {
             print("Lose");
         }
+    }
+
+    public void GainLife() {
+        lives++;
+        print(lives);
+        liveCounters[lives - 1].color = ColorManager.Instance.color;
     }
 
 }
