@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 8088181871826496403}
   - component: {fileID: 8088181871826496402}
   - component: {fileID: 7084116143074216727}
+  - component: {fileID: -9041954480041040199}
   m_Layer: 0
   m_Name: Accelerator
   m_TagString: Untagged
@@ -166,7 +167,7 @@ AreaEffector2D:
   m_ForceMagnitude: 200
   m_ForceVariation: 0
   m_ForceTarget: 0
-  m_Drag: 0
+  m_Drag: 1
   m_AngularDrag: 0
 --- !u!114 &7084116143074216727
 MonoBehaviour:
@@ -185,6 +186,21 @@ MonoBehaviour:
   - {fileID: 8088181872225396549}
   - {fileID: 8088181871143511152}
   - {fileID: 8088181872869584250}
+--- !u!114 &-9041954480041040199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8088181871826496405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd682964612d0e4ab72d0c8311b0a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bopMode: 0
+  smoothing: 0.05
+  dynamic: 0
 --- !u!1 &8088181872225396551
 GameObject:
   m_ObjectHideFlags: 0

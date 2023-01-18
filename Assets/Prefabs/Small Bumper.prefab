@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 3051940661534660203}
   - component: {fileID: 3051940661534660202}
   - component: {fileID: 3051940661534660205}
+  - component: {fileID: -1504762787135123488}
   m_Layer: 0
   m_Name: Small Bumper
   m_TagString: Bumper
@@ -151,6 +152,20 @@ MonoBehaviour:
   colorSmoothing: 0.2
   bounce: 20
   points: 100
+--- !u!114 &-1504762787135123488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3051940661534660200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd682964612d0e4ab72d0c8311b0a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1
+  smoothing: 0.05
 --- !u!1 &3051940662132473222
 GameObject:
   m_ObjectHideFlags: 0
