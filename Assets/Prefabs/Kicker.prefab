@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5428389573526221093}
   - component: {fileID: 5428389573526221099}
   - component: {fileID: 5428389573526221098}
+  - component: {fileID: 6022686807793457168}
   m_Layer: 0
   m_Name: Kicker
   m_TagString: Bumper
@@ -161,3 +162,17 @@ MonoBehaviour:
   colorSmoothing: 0.2
   bounce: 20
   points: 50
+--- !u!114 &6022686807793457168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5428389573526221092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd682964612d0e4ab72d0c8311b0a6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1
+  smoothing: 0.05
