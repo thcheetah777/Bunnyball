@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDashing : MonoBehaviour
+public class BallDash : MonoBehaviour
 {
 
     public float force = 10;
@@ -10,10 +10,10 @@ public class PlayerDashing : MonoBehaviour
 
     public float angle = 0;
 
-    Rigidbody2D playerBody;
+    Rigidbody2D ballBody;
 
     void Start() {
-        playerBody = GetComponent<Rigidbody2D>();
+        ballBody = GetComponent<Rigidbody2D>();
     }
 
     void Update() {
@@ -39,8 +39,8 @@ public class PlayerDashing : MonoBehaviour
         {
             SlowmoManager.Instance.EndSlowmo();
 
-            playerBody.velocity = Vector2.zero;
-            playerBody.AddForce(Quaternion.Euler(0, 0, angle) * Vector2.right * force, ForceMode2D.Impulse);
+            ballBody.velocity = Vector2.zero;
+            ballBody.AddForce(Quaternion.Euler(0, 0, angle) * Vector2.right * force, ForceMode2D.Impulse);
         }
     }
 

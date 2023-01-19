@@ -802,6 +802,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: Map 2
+  smoothing: 0.1
+  targetScale: {x: 0, y: 0}
 --- !u!1 &795873446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: Map 3
+  smoothing: 0.1
+  targetScale: {x: 0, y: 0}
 --- !u!114 &1282494453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1471,6 +1475,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: Map 1
+  smoothing: 0.1
+  targetScale: {x: 0, y: 0}
 --- !u!1 &2027082005
 GameObject:
   m_ObjectHideFlags: 0

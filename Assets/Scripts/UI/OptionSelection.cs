@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class OptionSelection : MonoBehaviour
 {
 
     public string playerPrefsID = "";
-    public string sceneChange = "";
+    [Tooltip("Change the scene based on the option value")] public bool sceneChangeOptions;
     public float scaleChange = 0.2f;
-    public bool sceneChangeOptions = false;
+    public UnityEvent onSelect;
 
     private int index = 0;
 
@@ -29,14 +30,14 @@ public class OptionSelection : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            PlayerPrefs.SetString(playerPrefsID, transform.GetChild(index).GetComponent<Option>().value);
-            print(PlayerPrefs.GetString(playerPrefsID));
+            onSelect.Invoke();
+            if (playerPrefsID.Length > 0)
+            {
+                PlayerPrefs.SetString(playerPrefsID, transform.GetChild(index).GetComponent<Option>().value);
+            }
             if (sceneChangeOptions)
             {
                 SceneLoader.Instance.LoadScene(transform.GetChild(index).GetComponent<Option>().value);
-            } else
-            {
-                SceneLoader.Instance.LoadScene(sceneChange);
             }
         }
     }
@@ -46,10 +47,10 @@ public class OptionSelection : MonoBehaviour
 
         foreach (Transform child in transform)
         {
-            child.transform.localScale = Vector3.one;
+            child.GetComponent<Option>().targetScale = Vector2.one;
         }
 
-        transform.GetChild(index).transform.localScale += scaleChange * Vector3.one;
+        transform.GetChild(index).GetComponent<Option>().targetScale += scaleChange * Vector2.one;
     }
 
 }

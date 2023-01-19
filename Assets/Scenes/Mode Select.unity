@@ -360,9 +360,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefsID: Mode
-  sceneChange: Map Select
-  scaleChange: 0.1
   sceneChangeOptions: 0
+  scaleChange: 0.1
+  onSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 857393890}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Map Select
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &195498115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,6 +951,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: Timed
+  smoothing: 0.1
+  targetScale: {x: 0, y: 0}
+--- !u!114 &857393890 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -2427984277473890003, guid: b23aaf19e3b132443878b47b4106aaec, type: 3}
+  m_PrefabInstance: {fileID: 1847436008}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaf820d5198fadc43ac3b93056cb5340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &863477290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,6 +1408,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: Classic
+  smoothing: 0.1
+  targetScale: {x: 0, y: 0}
 --- !u!1 &2027082005
 GameObject:
   m_ObjectHideFlags: 0
