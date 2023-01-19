@@ -12,8 +12,8 @@ public class Bop : MonoBehaviour
 {
 
     public BopMode bopMode = BopMode.Size;
-    public float smoothing = 0.05f;
     public bool dynamic = false;
+    private float smoothing = 0.02f;
     private Vector2 originalPosition;
     private Vector2 originalScale;
 

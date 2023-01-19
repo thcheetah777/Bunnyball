@@ -650,7 +650,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bopMode: 1
-  smoothing: 0.05
   dynamic: 1
 --- !u!1 &616465290
 GameObject:
@@ -693,10 +692,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ee0ef95c6c771dd42b05e6e90f0d5e7f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.2
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -2517,11 +2516,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd6953521a0d09a42917651abeae1b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleBop: 0.5
+  obstacleBop: 0.8
   colorSpeed: 0.005
-  cameraBop: 0.2
+  cameraBop: 0.4
   partying: 0
-  length: 5
+  length: 11
+  bonusRoundMusic: {fileID: 8300000, guid: ee0ef95c6c771dd42b05e6e90f0d5e7f, type: 3}
 --- !u!1 &1963714123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2862,11 +2862,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1112709457809412339, guid: 060cecc1b2a3b4d42a56256456fc1f92, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1
+      value: 1.85
       objectReference: {fileID: 0}
     - target: {fileID: 1112709457809412339, guid: 060cecc1b2a3b4d42a56256456fc1f92, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.15
+      value: 8.14
       objectReference: {fileID: 0}
     - target: {fileID: 1112709457809412339, guid: 060cecc1b2a3b4d42a56256456fc1f92, type: 3}
       propertyPath: m_LocalPosition.z

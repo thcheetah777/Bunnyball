@@ -13,15 +13,9 @@ public class DropTargetGroup : MonoBehaviour
             if (!dropTarget.activated) completed = false;
         }
 
-        if (completed && LifeManager.Instance.lives != LifeManager.Instance.maxLives)
+        if (completed && !PartyManager.Instance.partying)
         {
-            if (ModeManager.Instance.gameMode == GameModes.Classic)
-            {
-                LifeManager.Instance.GainLife();
-            } else
-            {
-                Timer.Instance.timeRemaining += 15;
-            }
+            PartyManager.Instance.StartBonusRound();
             
             foreach (Transform target in transform)
             {

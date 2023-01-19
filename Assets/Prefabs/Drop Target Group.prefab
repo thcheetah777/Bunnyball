@@ -402,8 +402,8 @@ MonoBehaviour:
   bumpedSize: 0.6
   sizeSmoothing: 0.05
   colorSmoothing: 0.2
-  bounce: 10
-  points: 50
+  bounce: 50
+  points: 0
 --- !u!114 &14172643732540848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,8 +486,8 @@ MonoBehaviour:
   bumpedSize: 0.6
   sizeSmoothing: 0.05
   colorSmoothing: 0.2
-  bounce: 10
-  points: 50
+  bounce: 50
+  points: 0
 --- !u!114 &14172643924859314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,8 +705,8 @@ MonoBehaviour:
   bumpedSize: 0.6
   sizeSmoothing: 0.05
   colorSmoothing: 0.2
-  bounce: 10
-  points: 50
+  bounce: 50
+  points: 0
 --- !u!114 &14172644107323783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,8 +873,8 @@ MonoBehaviour:
   bumpedSize: 0.6
   sizeSmoothing: 0.05
   colorSmoothing: 0.2
-  bounce: 10
-  points: 50
+  bounce: 50
+  points: 0
 --- !u!114 &14172644359769731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -957,8 +957,8 @@ MonoBehaviour:
   bumpedSize: 0.6
   sizeSmoothing: 0.05
   colorSmoothing: 0.2
-  bounce: 10
-  points: 50
+  bounce: 50
+  points: 0
 --- !u!114 &14172644401267739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1041,8 +1041,8 @@ MonoBehaviour:
   bumpedSize: 0.6
   sizeSmoothing: 0.05
   colorSmoothing: 0.2
-  bounce: 10
-  points: 50
+  bounce: 50
+  points: 0
 --- !u!114 &14172644462593104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,8 +1125,8 @@ MonoBehaviour:
   bumpedSize: 0.6
   sizeSmoothing: 0.05
   colorSmoothing: 0.2
-  bounce: 10
-  points: 50
+  bounce: 50
+  points: 0
 --- !u!114 &14172644579171528
 MonoBehaviour:
   m_ObjectHideFlags: 0

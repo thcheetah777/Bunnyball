@@ -10,6 +10,7 @@ public class PartyManager : MonoBehaviour
     public float cameraBop = 0.2f;
     public bool partying = false;
     public float length = 90;
+    public AudioClip bonusRoundMusic;
     private float speed = 0.35f;
 
     #region Singleton
@@ -27,14 +28,8 @@ public class PartyManager : MonoBehaviour
         StartCoroutine(StartParty());
     }
 
-    void Update() {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            StartBonusRound();
-        }
-    }
-
     private IEnumerator StartParty() {
+        AudioManager.Instance.PlaySound(bonusRoundMusic);
         ColorManager.Instance.changeSpeed = colorSpeed;
         partying = true;
 
