@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7495863645122662136
+--- !u!1 &4561987344149359849
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2715454962953635596}
-  - component: {fileID: -2427984277473890003}
+  - component: {fileID: 4561987344149359848}
+  - component: {fileID: 4561987344149359851}
   m_Layer: 0
-  m_Name: Scene Loader
+  m_Name: Color Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2715454962953635596
+--- !u!4 &4561987344149359848
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7495863645122662136}
+  m_GameObject: {fileID: 4561987344149359849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,15 +32,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-2427984277473890003
+--- !u!114 &4561987344149359851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7495863645122662136}
+  m_GameObject: {fileID: 4561987344149359849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaf820d5198fadc43ac3b93056cb5340, type: 3}
+  m_Script: {fileID: 11500000, guid: 70734d1082373f6498770eb7043626a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultColor: {r: 0, g: 1, b: 0.5568628, a: 1}
+  changeSpeed: 0.0005
+  color: {r: 1, g: 0, b: 0, a: 1}
+  dynamic: 1
+  randomize: 1

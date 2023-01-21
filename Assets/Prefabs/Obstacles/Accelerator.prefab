@@ -199,7 +199,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bopMode: 0
-  smoothing: 0.05
   dynamic: 0
 --- !u!1 &8088181872225396551
 GameObject:

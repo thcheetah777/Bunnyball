@@ -6,7 +6,11 @@ using TMPro;
 public class ColorChangingText : MonoBehaviour
 {
 
-    public TMP_Text text;
+    TMP_Text text;
+
+    void Start() {
+        text = GetComponent<TMP_Text>();
+    }
 
     void Update() {
         text.color = ColorManager.Instance.color;

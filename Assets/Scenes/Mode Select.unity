@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 146585310}
   - component: {fileID: 146585312}
   - component: {fileID: 146585311}
+  - component: {fileID: 146585313}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -307,6 +308,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146585309}
   m_CullTransparentMesh: 1
+--- !u!114 &146585313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146585309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d305a9257182f7499649fe48160385a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &195498112
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +387,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Map Select
+          m_StringArgument: Game
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &195498115
@@ -605,8 +618,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288651681
-  m_fontColor: {r: 0.6313726, g: 0.6313726, b: 0.62352943, a: 1}
+    rgba: 4283124555
+  m_fontColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -951,7 +964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: Timed
-  smoothing: 0.1
+  smoothing: 0.3
   targetScale: {x: 0, y: 0}
 --- !u!114 &857393890 stripped
 MonoBehaviour:
@@ -975,6 +988,7 @@ GameObject:
   - component: {fileID: 863477291}
   - component: {fileID: 863477293}
   - component: {fileID: 863477292}
+  - component: {fileID: 863477294}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -1099,6 +1113,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863477290}
   m_CullTransparentMesh: 1
+--- !u!114 &863477294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863477290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d305a9257182f7499649fe48160385a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &974455034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4779473705211400266, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779473705211400266, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779473705211400266, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779473705211400266, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779473705211400266, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779473705211400266, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779473705211400266, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779473705211400266, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779473705211400266, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779473705211400266, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779473705211400266, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779473705211400267, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
+      propertyPath: m_Name
+      value: Fast Color Manager 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f23ee0bb3f9cefa4387aac4167c13bd6, type: 3}
 --- !u!1 &1582114728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,7 +1278,7 @@ RectTransform:
   - {fileID: 400890178}
   - {fileID: 195498113}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1268,7 +1351,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1910995030918285269, guid: 61d3a90823593f94c8409260b68904d8, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1910995030918285269, guid: 61d3a90823593f94c8409260b68904d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1408,7 +1491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: Classic
-  smoothing: 0.1
+  smoothing: 0.3
   targetScale: {x: 0, y: 0}
 --- !u!1 &2027082005
 GameObject:
@@ -1508,8 +1591,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4288651681
-  m_fontColor: {r: 0.6313726, g: 0.6313726, b: 0.62352943, a: 1}
+    rgba: 4283124555
+  m_fontColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
